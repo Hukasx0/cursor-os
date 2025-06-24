@@ -132,6 +132,15 @@ This is an experimental project exploring the boundaries of AI systems. Feel fre
 ### Experimental Project
 This is an experimental project pushing the boundaries of what's possible with AI prompt engineering. Results may vary, and the system will improve over time through use and iteration.
 
+### Model Compatibility
+**Cursor OS was tested primarily with Claude 4 Sonnet**. Different AI models may produce varying results in terms of:
+- **Addon system effectiveness** - Some models may be better at understanding and applying specialized prompts
+- **Personality consistency** - The ability to maintain consistent behavior patterns across interactions
+- **System navigation** - How well the AI follows the file organization and protocol structure
+- **Self-improvement capabilities** - The quality of auto-generated addons and system updates
+
+If you're using a different AI model (GPT-4, Claude 3, etc.), you may need to adjust prompts or expectations accordingly. The system is designed to be model-agnostic, but you know.
+
 ### Not Affiliated with Cursor
 **DISCLAIMER**: This project is **not affiliated with, endorsed by, or connected to** Cursor AI, Inc. or the official Cursor code editor project. This is an independent, experimental project that uses the Cursor editor as a platform for exploring AI prompt engineering and operating system concepts. All trademarks belong to their respective owners.
 

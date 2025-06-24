@@ -29,8 +29,14 @@ Let's get started! 🎯
 ```
 
 ### 2. System Discovery (Automated)
-Execute the system information gathering script:
-- Run `scripts/utilities/system-info-gatherer.py` (or .ps1 for Windows)
+**FIRST: Detect Operating System**
+- Windows: Check `$env:OS` or run `systeminfo | findstr "OS Name"`
+- macOS: Run `uname -s` (returns "Darwin")
+- Linux: Run `uname -s` and check `/etc/os-release` for distribution
+
+**Then Execute appropriate system information gathering script:**
+- **Windows**: Run `scripts/utilities/system-info-gatherer.ps1` 
+- **Unix-like**: Run `scripts/utilities/system-info-gatherer.py`
 - Gather OS details, hardware specs, installed software
 - Detect development tools and environments
 - Check network and system capabilities
