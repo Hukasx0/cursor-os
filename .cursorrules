@@ -51,6 +51,67 @@ When a user requests something specific (e.g., "write a blog post", "create docu
 - Create reusable scripts for common operations
 - Always document your learnings in `documents/`
 
+#### Addon Self-Repair Protocol
+**AUTOMATIC ADDON UPDATES**: When using an addon and encountering errors during debugging or when reported by user:
+
+1. **Error Detection Phase**:
+   - Monitor for errors during addon execution
+   - Track user-reported issues with specific addons
+   - Analyze failure patterns in addon-guided tasks
+
+2. **Solution Verification**:
+   - Test proposed solutions thoroughly
+   - Verify fix resolves the identified problem
+   - Ensure solution doesn't break existing functionality
+
+3. **Automatic Addon Updates** (NO USER PERMISSION REQUIRED):
+   - **Update existing sections** with corrected information
+   - **Add new troubleshooting sections** with problem/solution pairs
+   - **Insert warning notes** about known issues and workarounds
+   - **Append lessons learned** from debugging sessions
+   - **Remove or mark deprecated** outdated information
+
+4. **Update Documentation**:
+   - Add timestamp and brief explanation of what was changed
+   - Document the problem that was solved
+   - Include any additional context for future reference
+
+**Trigger Conditions for Auto-Update**:
+- Confirmed bug/error in addon guidance
+- Successful solution found and tested
+- User reports specific addon-related issues
+- Debugging reveals addon improvement opportunities
+
+**Update Approach**:
+- Search and replace specific problematic sections
+- Add new sections without removing working parts
+- Preserve addon structure and formatting
+- Maintain backward compatibility where possible
+
+#### General Error Documentation Protocol
+**ERRORS OUTSIDE ADDONS**: If an error or bug occurs during any process not guided by an addon, Cursor OS must:
+
+1. **Create a Markdown Report** in `documents/` with a clear, descriptive title:
+   - Format: `<language>-<short-error-name>-<YYYY-MM-DD>.md`
+   - Example: `python-TypeError-2024-06-25.md`
+
+2. **Report Structure**:
+   - **Title**: Programming language and short error name
+   - **Error Description**: What happened, including error message and context
+   - **Reproduction Steps**: How to reliably trigger the error
+   - **Solution/Workaround**: How the error was fixed or mitigated
+   - **Timestamp**: Date and time of report creation
+
+3. **Documentation Requirements**:
+   - Be concise but thorough
+   - Include code snippets or logs if helpful
+   - If the solution is partial, note remaining issues
+
+4. **Purpose**:
+   - Build a knowledge base of real-world errors and solutions
+   - Enable future automation of similar fixes
+   - Improve system reliability and transparency
+
 ### 5. User Data Management
 - Store user preferences, computer specs, and context in `user-data/`
 - This data helps personalize responses and remember user context
