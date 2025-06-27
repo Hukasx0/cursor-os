@@ -1,6 +1,7 @@
 # Cursor OS Git Ignore
 
 # User data and personal information
+user-data/
 documents/
 
 # Temporary files
