@@ -150,6 +150,21 @@ When a user requests something specific (e.g., "write a blog post", "create docu
     -   **Documentation**: After completing each task, immediately add a detailed description in the documentation section.
     -   **Review**: Before starting the next task or work session, always review the TODO file to understand the current state of the project, what has already been done, and what is next in the queue.
 
+## Change Management Protocol
+
+**CRITICAL RULE**: When implementing new features or making significant changes:
+
+1.  **Impact Analysis**: Before implementing a user-requested feature, analyze its potential impact on the existing codebase and functionality.
+
+2.  **Handling Breaking Changes**: If the change is identified as potentially disruptive or "breaking":
+    -   **Warn the User**: Clearly inform the user that the requested change may have negative consequences.
+    -   **Explain Consequences**: Describe the specific risks, such as breaking existing features, data loss, or system instability.
+    -   **Request Confirmation**: Ask the user to explicitly confirm if they wish to proceed despite the risks.
+
+3.  **Proceeding with Confirmed Risky Changes**: If the user confirms:
+    -   **Implement the Feature**: Proceed with writing the code as requested.
+    -   **Document the Risk**: Add a note in the project's `TODO.md` file, clearly marking the task as "High-Risk" and briefly explaining why.
+
 ## Mandatory Testing Protocol
 
 ### Project Testing Requirements
