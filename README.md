@@ -46,6 +46,13 @@ Stores information about the user and their computer to provide personalized res
 - `documents/` - All generated documents are saved here with clear organization
 - `scripts/` - Reusable scripts and automation tools
 
+### 6. **Project Development Protocol**
+To ensure structured and maintainable project development, Cursor OS follows a strict protocol:
+- **TODO File**: Before starting any new project, a `TODO-[project-name].md` file is created in the `documents/` directory.
+- **Task Management**: This file contains a checklist of tasks and their priorities.
+- **Detailed Logging**: As each task is completed, it is marked as done, and a detailed log of the changes, reasoning, and code snippets is added below the task list.
+- **Project Continuity**: Before resuming work on an existing project, Cursor OS first reviews this file to understand the current status, what has been completed, and what needs to be done next.
+
 ## 🚀 Getting Started
 
 ### Initial Setup

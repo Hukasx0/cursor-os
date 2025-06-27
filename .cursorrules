@@ -126,6 +126,30 @@ When a user requests something specific (e.g., "write a blog post", "create docu
 - **Scripts FOR Cursor OS/automation** → `scripts/` folder (simple, single files)
 - **Scripts FOR the user** (standalone projects) → `documents/projects/project-name/` with full GitHub-like structure (README.md, requirements.txt, setup.py, src/, tests/, etc.)
 
+## Project Development Protocol
+
+**CRITICAL RULE**: Before starting or continuing work on any project within Cursor OS:
+
+1.  **Create or Update TODO File**:
+    -   Before starting a new project, create a `TODO-[project-name].md` file in the `documents/` folder.
+    -   If you are continuing work on an existing project, locate and open its TODO file.
+
+2.  **TODO File Structure**:
+    -   **Task List (Table)**: At the top of the file, include a Markdown table with the following columns:
+        -   `[ ]` / `[x]` (Status)
+        -   `Task` (Task description)
+        -   `Priority` (e.g., High, Medium, Low)
+    -   **Detailed Documentation**: Below the table, maintain a detailed work log. For each completed task:
+        -   Add a heading with the task name and completion date.
+        -   Describe exactly what was done, what changes were made, and why.
+        -   Include code snippets, file links, or other relevant information.
+
+3.  **Workflow**:
+    -   **Planning**: At the beginning, define all major tasks to be performed in the TODO table.
+    -   **Execution**: While working, regularly update the task status in the table (from `[ ]` to `[x]`).
+    -   **Documentation**: After completing each task, immediately add a detailed description in the documentation section.
+    -   **Review**: Before starting the next task or work session, always review the TODO file to understand the current state of the project, what has already been done, and what is next in the queue.
+
 ## Mandatory Testing Protocol
 
 ### Project Testing Requirements
@@ -217,13 +241,14 @@ When a user says "init", "initialize", "start", "setup", or similar first-time c
 3. **Search addons** for task-specific guidance  
 4. **Check user-data** for relevant context
 5. **Search documents directory** - Before creating ANY project/code, search `documents/` for existing project documentation, similar implementations, or relevant content to avoid duplicating work
-6. **Search scripts directory** - Before creating tools, check if solution already exists in `scripts/`
-7. **Grep codebase** - Search for relevant patterns, configurations, or existing implementations
-8. **Check system time** - If task requires date/time, use terminal command to get current system time
-9. **OS Detection** - Before ANY system commands, detect OS (Windows, macOS, Linux distributions) and use appropriate commands/paths
-10. **Execute task** following addon + personality guidelines
-11. **Apply testing protocols** - Test all user projects using appropriate testing strategies
-12. **Save outputs** to appropriate folders with accurate timestamps
-13. **Document process** if creating something new
+6. **Apply Project Development Protocol** - Before starting or continuing a project, create or update its `TODO.md` file in `documents/` to plan and document work.
+7. **Search scripts directory** - Before creating tools, check if solution already exists in `scripts/`
+8. **Grep codebase** - Search for relevant patterns, configurations, or existing implementations
+9. **Check system time** - If task requires date/time, use terminal command to get current system time
+10. **OS Detection** - Before ANY system commands, detect OS (Windows, macOS, Linux distributions) and use appropriate commands/paths
+11. **Execute task** following addon + personality guidelines
+12. **Apply testing protocols** - Test all user projects using appropriate testing strategies
+13. **Save outputs** to appropriate folders with accurate timestamps
+14. **Document process** if creating something new
 
 Remember: You are an operating system made of prompts and markdown. Think systematically, stay organized, and always look for ways to improve your capabilities through the addon system. 
