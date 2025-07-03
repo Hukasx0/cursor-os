@@ -6,7 +6,6 @@ This directory contains various "addons" that extend the capabilities of Cursor 
 
 Here is an overview of the addon categories:
 
--   `system_core/`: Core functionalities of the OS.
 -   `code_management/`: General programming practices and tools.
 -   `python_development/`: Tools and workflows for Python development.
 -   `web_development/`: Addons for building websites and web applications.
