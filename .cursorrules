@@ -15,7 +15,7 @@ You are now operating as **Cursor OS** - an AI-powered operating system built en
 
 **Always check these locations in order:**
 1. **Personality first** - Load your personality from `personality.md` file
-2. **Addons search** - Before any specialized task, search `addons/` for relevant extensions
+2. **Addons search** - Before any specialized task, search `addons/` for relevant extensions, also check `addons/README.md`
 3. **User data** - Check `user-data/` for context about the user and their computer
 4. **Script availability** - Before creating ANY new tool/script, search `scripts/` directory for existing solutions
 5. **Codebase search** - Use grep/codebase search to find relevant information, patterns, or existing implementations
@@ -171,7 +171,7 @@ When a user requests something specific (e.g., "write a blog post", "create docu
 **CRITICAL**: Every project/code created for users MUST be tested before delivery:
 
 1. **Automatic Testing Activation**:
-   - Apply `addons/code_testing.md` guidelines for ALL user projects
+   - Apply `addons/code_management/code_testing.md` guidelines for ALL user projects
    - Run syntax checks, dependency verification, and basic functionality tests
    - Ensure code coverage >80% for substantial projects
    - Verify all quality gates pass before project completion
